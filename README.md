@@ -56,14 +56,14 @@ Todas as rotas devem receber os cabeçalhos:
 | --- | --- | --- | --- | --- |
 |GET | /tutors | Retornar todas os tutores | - | - |
 
-![Video](https://github.com/DaniPoletto/challenge-alura-back-end-5-laravel/blob/main/imagens_readme/get_categorias.jpg)
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_tutors.jpg)
 
 #### 1.2 Retornar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
 | --- | --- | --- | --- | --- |
 |GET | /tutors/{id} | Retornar um tutor por id | - | - |
 
-![Video](https://github.com/DaniPoletto/challenge-alura-back-end-5-laravel/blob/main/imagens_readme/get_categoria.jpg)
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_tutor.jpg)
 
 #### 1.3 Cadastrar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
@@ -78,7 +78,7 @@ Todas as rotas devem receber os cabeçalhos:
 |email | string | Obrigatório | 
 |password | string | Obrigatório | 
 
-![Video](https://github.com/DaniPoletto/challenge-alura-back-end-5-laravel/blob/main/imagens_readme/post_categoria.jpg)
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/post_tutors.jpg)
 
 #### 1.4 Atualizar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
@@ -93,11 +93,11 @@ Todas as rotas devem receber os cabeçalhos:
 |email | string | Obrigatório | 
 |password | string | Obrigatório | 
 
-![Video](https://github.com/DaniPoletto/challenge-alura-back-end-5-laravel/blob/main/imagens_readme/update_categoria.jpg)
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/update_tutor.jpg)
 
 #### 1.5 Deletar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
 | --- | --- | --- | --- | --- |
 |DELETE | /tutord/{id} |Deletar um tutor por id | - | - |
 
-![Video](https://github.com/DaniPoletto/challenge-alura-back-end-5-laravel/blob/main/imagens_readme/delete_categoria.jpg)
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_tutor.jpg)
