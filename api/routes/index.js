@@ -6,5 +6,4 @@ module.exports = app => {
         bodyParser.json(),
         tutors
     )  
-    app.get('/', (req, res) => res.send('Hello!'))
 }
