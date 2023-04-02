@@ -40,7 +40,7 @@ npm start
 O padrão de formato utilizado é o Json tanto para requisições como resposta.
 
 ## URL Base
- > https://challenge-alura-back-end-5-laravel-gi71.vercel.app/api/
+ > http://127.0.0.1:8000
 
 ## Rotas
 
