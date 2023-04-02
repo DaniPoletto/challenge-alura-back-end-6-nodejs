@@ -5,5 +5,5 @@ module.exports = app => {
     app.use(
         bodyParser.json(),
         tutors
-    )  
+    ) 
 }
