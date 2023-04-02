@@ -31,7 +31,7 @@ Essa edição tem como objetivo construir uma api para adoção de pets.
 npm install
 ```
 
-2) Rodando servidor na pasta server
+2) Rodando servidor na pasta api
 ```
 npm start
 ```
