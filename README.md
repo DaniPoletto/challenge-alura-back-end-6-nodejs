@@ -68,7 +68,7 @@ Todas as rotas devem receber os cabeçalhos:
 #### 1.3 Cadastrar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
 | --- | --- | --- | --- | --- |
-|POST | /tutors | Cadastrar um tutor | <pre>{<br> "name": "Daniela",<br> "email": "daniela@teste.com.br"<br>,<br> "password": "123456"<br>}</pre> | - |
+|POST | /tutors | Cadastrar um tutor | <pre>{<br> "name": "Daniela",<br> "email": "daniela@teste.com.br",<br> "password": "123456"<br>}</pre> | - |
 
 ##### 1.3.1 Campos
 
@@ -83,7 +83,7 @@ Todas as rotas devem receber os cabeçalhos:
 #### 1.4 Atualizar um tutor
 | Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
 | --- | --- | --- | --- | --- |
-|PUT | /tutors/{id} |Atualizar um tutor por id | <pre>{<br> "name": "Ana",<br> "email": "ana@teste.com.br"<br>,<br> "password": "654321"<br>}</pre> | - |
+|PUT | /tutors/{id} |Atualizar um tutor por id | <pre>{<br> "name": "Ana",<br> "email": "ana@teste.com.br",<br> "password": "654321"<br>}</pre> | - |
 
 ##### 1.4.1 Campos
 
