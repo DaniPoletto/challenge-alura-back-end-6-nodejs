@@ -101,3 +101,55 @@ Todas as rotas devem receber os cabeçalhos:
 |DELETE | /tutord/{id} |Deletar um tutor por id | - | - |
 
 ![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_tutor.jpg)
+
+### 2 Abrigos
+#### 2.1 Retornar abrigos
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /shelters | Retornar todas os abrigos | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_shelters.jpg)
+
+#### 2.2 Retornar um shelter
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /shelters/{id} | Retornar um abrigo por id | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_shelter.jpg)
+
+#### 2.3 Cadastrar um shelter
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|POST | /shelters | Cadastrar um abrigo | <pre>{<br> "name": "Daniela",<br> "email": "daniela@teste.com.br",<br> "password": "123456"<br>}</pre> | - |
+
+##### 2.3.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|email | string | Obrigatório | 
+|password | string | Obrigatório | 
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/post_shelters.jpg)
+
+#### 2.4 Atualizar um shelter
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|PUT | /shelters/{id} |Atualizar um abrigo por id | <pre>{<br> "name": "Ana",<br> "email": "ana@teste.com.br",<br> "password": "654321"<br>}</pre> | - |
+
+##### 2.4.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|email | string | Obrigatório | 
+|password | string | Obrigatório | 
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/update_shelter.jpg)
+
+#### 2.5 Deletar um shelter
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|DELETE | /shelterd/{id} |Deletar um abrigo por id | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_shelter.jpg)
