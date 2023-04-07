@@ -101,3 +101,116 @@ Todas as rotas devem receber os cabeçalhos:
 |DELETE | /tutord/{id} |Deletar um tutor por id | - | - |
 
 ![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_tutor.jpg)
+
+### 2 Abrigos
+#### 2.1 Retornar abrigos
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /shelters | Retornar todas os abrigos | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_shelters.jpg)
+
+#### 2.2 Retornar um abrigo
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /shelters/{id} | Retornar um abrigo por id | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_shelter.jpg)
+
+#### 2.3 Cadastrar um abrigo
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|POST | /shelters | Cadastrar um abrigo | <pre>{<br> "name": "Daniela",<br> "email": "daniela@teste.com.br",<br> "password": "123456"<br>}</pre> | - |
+
+##### 2.3.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|email | string | Obrigatório | 
+|password | string | Obrigatório | 
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/post_shelters.jpg)
+
+#### 2.4 Atualizar um abrigo
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|PUT | /shelters/{id} |Atualizar um abrigo por id | <pre>{<br> "name": "Ana",<br> "email": "ana@teste.com.br",<br> "password": "654321"<br>}</pre> | - |
+
+##### 2.4.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|email | string | Obrigatório | 
+|password | string | Obrigatório | 
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/update_shelter.jpg)
+
+#### 2.5 Deletar um abrigo
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|DELETE | /shelterd/{id} |Deletar um abrigo por id | - | - |
+
+![Shelter](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_shelter.jpg)
+
+### 3 Pets
+#### 3.1 Retornar pets
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /pets | Retornar todas os pets | - | - |
+
+![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_pets.jpg)
+
+#### 3.2 Retornar um pet
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|GET | /pets/{id} | Retornar um pet por id | - | - |
+
+![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/get_pet.jpg)
+
+#### 3.3 Cadastrar um pet
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|POST | /pets | Cadastrar um pet | <pre>{<br> {"shelter_id": 1,<br>"name": "Doguinho",<br>"description": "Muito carinhoso",<br>"adopted": false,<br>"age": 2,<br>"address": "rua 1",<br>"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktXg5_v8-L9AslphhrFvphE12SWkGl-_Jig&usqp=CAU"}<br>}</pre> | - |
+
+##### 3.3.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|shelter_id | inteiro | Obrigatório | 
+|description | string | Obrigatório | 
+|adopted | booleano | Obrigatório | 
+|age | inteiro (meses) | Obrigatório | 
+|address | string | Obrigatório | 
+|image | string | Obrigatório | 
+
+![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/post_pet.jpg)
+
+#### 3.4 Atualizar um pet
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|PUT | /pets/{id} |Atualizar um pet por id | <pre>{<br> {"shelter_id": 1,<br>"name": "Doguinho",<br>"description": "Muito carinhoso",<br>"adopted": false,<br>"age": 2,<br>"address": "rua 1",<br>"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktXg5_v8-L9AslphhrFvphE12SWkGl-_Jig&usqp=CAU"}<br>}</pre> | - |
+
+##### 3.4.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|name | string | Obrigatório | 
+|shelter_id | inteiro | Obrigatório | 
+|description | string | Obrigatório | 
+|adopted | booleano | Obrigatório | 
+|age | inteiro (meses) | Obrigatório | 
+|address | string | Obrigatório | 
+|image | string | Obrigatório | 
+
+![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/update_pet.jpg)
+
+#### 3.5 Deletar um pet
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|DELETE | /petd/{id} |Deletar um pet por id | - | - |
+
+![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_pet.jpg)
+
