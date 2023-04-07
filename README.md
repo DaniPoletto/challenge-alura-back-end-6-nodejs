@@ -17,9 +17,22 @@ Essa edição tem como objetivo construir uma api para adoção de pets.
    - [X] Deletar tutor
    - [X] Testes Postman
 
-- [ ] <b>2ª semana</b> - Relacionamento entre entidades e engenharia de software.
+- [X] <b>2ª semana</b> - Relacionamento entre entidades e engenharia de software.
+   - [X] Retornar abrigos
+   - [X] Retornar um abrigo
+   - [X] Cadastrar abrigo
+   - [X] Atualizar abrigo
+   - [X] Deletar abrigo
+   - [X] Retornar pets
+   - [X] Retornar um pet
+   - [X] Cadastrar pet
+   - [X] Atualizar pet
+   - [X] Deletar pet
+   - [X] Cadastrar adoção
+   - [X] Deletar adoção
+   - [X] Testes Postman
 
-- [ ] <b>3ª e 4ª semana</b> - Autenticação, testes e deploy
+- [ ] <b>3ª e 4ª semana</b> - Autenticação e testes
 
 ## Tecnologias utilizadas
 [NodeJs](https://nodejs.org/en), MySql, Express e Sequelize. 
