@@ -1,10 +1,10 @@
 const database = require('../models')
 
-class TutorController {
+class ShelterController {
     static async all(req, res) {
         try {
-            const allTutor = await database.Tutors.findAll()
-            return res.status(200).json(allTutor)
+            const allShelter = await database.Shelters.findAll()
+            return res.status(200).json(allShelter)
         } catch (error) {
             return res.status(500).json(error.message)
         }
@@ -13,7 +13,7 @@ class TutorController {
     static async findOneById (req, res) {
         const { id } = req.params
         try {
-            const classFound = await database.Tutors.findOne( { where : { 
+            const classFound = await database.Shelters.findOne( { where : { 
                 id : Number(id)
             }})
             return res.status(200).json(classFound)
@@ -25,7 +25,7 @@ class TutorController {
     static async create (req, res) {
         const newClass = req.body
         try {
-            const newClassCreated = await database.Tutors.create(newClass);
+            const newClassCreated = await database.Shelters.create(newClass);
             return res.status(200).json(newClassCreated)
         } catch (error) {
             return res.status(500).json(error.message)
@@ -36,10 +36,10 @@ class TutorController {
         const classToUpdate = req.body
         const { id } = req.params
         try {
-            await database.Tutors.update(classToUpdate, { where : { 
+            await database.Shelters.update(classToUpdate, { where : { 
                 id : Number(id)
             }});
-            const classUpdated = await database.Tutors.findOne( { where : { 
+            const classUpdated = await database.Shelters.findOne( { where : { 
                 id : Number(id)
             }})
             return res.status(200).json(classUpdated)
@@ -51,7 +51,7 @@ class TutorController {
     static async delete (req, res) {
         const { id } = req.params
         try {
-            const classDeleted = await database.Tutors.destroy( { where : { 
+            const classDeleted = await database.Shelters.destroy( { where : { 
                 id : Number(id)
             }});
             return res.status(200).json({ message: `id ${id} was deleted`})
@@ -61,4 +61,4 @@ class TutorController {
     }
 }
 
-module.exports = TutorController
+module.exports = ShelterController
