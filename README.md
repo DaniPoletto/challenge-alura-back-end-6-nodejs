@@ -22,7 +22,10 @@ Essa edição tem como objetivo construir uma api para adoção de pets.
 - [ ] <b>3ª e 4ª semana</b> - Autenticação, testes e deploy
 
 ## Tecnologias utilizadas
-[NodeJs](https://laravel.com/), MySql, Express e Sequelize. 
+[NodeJs](https://nodejs.org/en), MySql, Express e Sequelize. 
+
+## Esquema do banco de dados
+![Tutor](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/bd.jpg)
 
 ## Inicializando o projeto
 
