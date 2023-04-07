@@ -214,3 +214,25 @@ Todas as rotas devem receber os cabeçalhos:
 
 ![Pet](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_pet.jpg)
 
+### 4 Adoções
+#### 4.1 Cadastrar uma adoção
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|POST | /adoptions | Cadastrar um abrigo | <pre>{<br> "pet_id": 1,<br> "tutor_id": 1,<br> "date": "2023-04-07"<br>}</pre> | - |
+
+##### 4.1.1 Campos
+
+| Nome | Tipo | Descrição | 
+| --- | --- | --- | 
+|pet_id | inteiro | Obrigatório | 
+|tutor_id | inteiro | Obrigatório | 
+|date | string no formato YYYY-MM-DD | Obrigatório | 
+
+![Adoption](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/post_adoptions.jpg)
+
+#### 4.2 Deletar uma adoção
+| Método | Rota | Descrição | BODY PARAMS | QUERY PARAMS |
+| --- | --- | --- | --- | --- |
+|DELETE | /adoptions/{id} |Deletar um pet por id | - | - |
+
+![Adoption](https://github.com/DaniPoletto/challenge-alura-back-end-6-nodejs/blob/main/img/delete_adoptions.jpg)
